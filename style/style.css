@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redaction+20:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+
+    background-color: #1e0b36;
+    padding: 0;
+    color: black;
+    background-image: url(../img/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+h1, h2{
+    color: #418C35;
+}
+
+h1{
+    text-shadow: -1px 1px 5px #000, -2px 2px 5px #000, -3px 3px 5px #0000, -4px 4px 5px #000, -5px 5px 5px #000;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 26px;
+}
+
+a{
+    color: black;
+}
+
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cabecalho{
+    background-image: linear-gradient(rgba(20, 7, 36, 0.78), rgba(20, 7, 36, 0.85)), url('../img/logo.png');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #140724;
+    padding: 50px 0;
+    border-bottom: 3px solid #6c2bd9;
+    color: white;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.subtitulo{
+    max-width: 600px;
+    font-size: 20px;
+    color: #F5F5F5;
+}
+
+.menu-lista{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 20px 0 0;
+    padding: 0;
+    color: #140724;
+
+    list-style: none;
+
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.menu-link{
+    display:block;
+
+    padding: 8px 12px;
+    margin-left: 0;
+    margin-right: 0;
+
+    background-color: #1e0b36;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+    text-decoration: none;
+    width: 100%;
+}
+
+.container-imagem{
+    margin: 50px auto;
+    width: 300px;
+    height: 200px;
+
+    transition-property: width, height;
+    transition-duration: 3s, 3s;
+    transition-timing-function: ease-in-out, ease-in-out;
+}
+
+.container-imagem:hover{
+    width: 700px;
+    height: 300px;
+}
+
+.container-imagem img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+
+.secao{
+    padding: 72px;
+}
+
+.titulo-secao{
+    margin-bottom: 32px;
+    padding-left: 12px;
+
+    border-left: 5px solid white;
+    border-radius: 5px;
+}
+
+.grade-cards{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.card{
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #1e0b36;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px black;
+}
+
+.rodape{
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #EDEDED;
+    text-align: center;
+    color: #140724;
+}
+
+.rodape a{
+    text-decoration: none;
+}
+
+.rodape address{
+    font-style: normal;
+    text-decoration: none;
+}
+
+.rodape a:hover{
+    transition: color .3s linear;
+    color: #410985;
+}
+
+
+
+#lista-menu:hover .menu-lista{
+    height: 260px;
+}
+
+.menu-lista li{
+    border-radius: 7px;
+    width: auto;
+    height: auto;
+
+    background-color: white;
+
+    margin-right: 8px;
+    margin-bottom: 8px;
+
+    list-style: none;
+}
+
+nav #lista-menu{
+    display: inline-block;
+    list-style: none;
+    padding: 8px 16px;
+    margin: 0;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 0;
+    color: #140724;
+}
+
+
+.menu-principal ul{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#lista-menu {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.Whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 75px;
+    height: auto;
+}
