@@ -38,14 +38,12 @@ a{
 }
 
 .container{
-    display: flex;
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .cabecalho{
-    display: flex;
     background-image: url('../img/logo.png');
     background-size: auto 100%;
     background-position: center;
