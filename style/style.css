@@ -96,6 +96,10 @@ a{
     width: 100%;
 }
 
+.menu-link:hover{
+    background-color: #6c2bd9;
+}
+
 .container-imagem{
     margin: 50px auto;
     width: 300px;
@@ -197,6 +201,26 @@ nav #lista-menu{
     font-size: 20px;
     margin-left: 0;
     color: #140724;
+}
+
+.menu-compre{
+    list-style: none;
+    text-align: center;
+}
+
+.menu-compre a{
+     display:block;
+     border: 2px solid white;
+    border-radius: 5px;
+
+    padding: 8px 0px;
+    margin-left: 24%;
+    margin-right: 20px;
+    width: 50%;
+
+    color: white;
+    text-decoration: none;
+    background-color: #6c2bd9;
 }
 
 
