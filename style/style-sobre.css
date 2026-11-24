@@ -32,6 +32,11 @@
     width: 250px;
     height: 300px;
     justify-content: center;
+    transition: 0.3s;
+}
+
+.gallery-card img:hover{
+    transform: translateY(-5px);
 }
 
 .gallery-title {
@@ -49,10 +54,11 @@
     color: white;
     font-size: 35px;
     text-align: center;
-    transition-property: width, height;
-    transition-duration: 5s, 5s;
-    transition-timing-function: cubic-bezier(0, 1.45, .82, .09), linear;
-    transition-delay: 0s, 30ms;
+    transition: 5s;
+}
+
+#criadores:hover{
+    transform: translateX(20px);
 }
 
 .gallery-text-harold {

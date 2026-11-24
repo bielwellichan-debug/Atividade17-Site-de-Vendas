@@ -38,12 +38,14 @@ a{
 }
 
 .container{
+    display: flex;
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .cabecalho{
+    display: flex;
     background-image: url('../img/logo.png');
     background-size: auto 100%;
     background-position: center;
@@ -54,6 +56,11 @@ a{
     color: white;
     padding-top: 25px;
     padding-bottom: 25px;
+    transition: 3s;
+}
+
+.cabecalho:hover{
+    transform: translateY(-8px);
 }
 
 .subtitulo{
@@ -224,10 +231,12 @@ nav #lista-menu{
     color: white;
     text-decoration: none;
     background-color: #6c2bd9;
+    transition: 0.3s;
 }
 
 .menu-compre a:hover{
     background-color: #418C35;
+    transform: translateY(-3px);
 }
 
 
@@ -249,7 +258,7 @@ nav #lista-menu{
     height: auto;
 }
 
-strong{
+.strong{
     color: #6c2bd9;
     margin-left: 155px;
     text-align: center;
