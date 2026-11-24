@@ -3,6 +3,8 @@ table{
 
     border-collapse: collapse;
     background-color: white;
+    transition: 0.3s;
+    
 }
 
 table caption{
@@ -27,6 +29,10 @@ table thead{
 
 table tfoot{
     background-color: #d2ebec;
+}
+
+table:hover{
+    transform: translateY();
 }
 
 #promocao{
@@ -59,4 +65,9 @@ table tfoot{
 
 .meias{
     border-radius: 20px;
+}
+
+.meias:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px black;
 }

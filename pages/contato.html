@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/style-contato.css">
+    <title>Meias Fantasmas | Produtos</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+
+            <h1>Meias Fantasmas</h1>
+
+            <nav class="menu-principal">
+                <ul>
+                    <li id="lista-menu">Menu
+                        <ul class="menu-lista">
+                            <li>
+                                <a class="menu-link" href="../index.html">Início</a>
+                            </li>
+                            <li>
+                                <a class="menu-link" href="sobre.html">Sobre a empresa</a>
+                            </li>
+                            <li>
+                                <a class="menu-link" href="produtos.html">Nossos produtos</a>
+                            </li>
+                            <li>
+                                <a class="menu-link" href="contato.html">Nos contate</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <br>
+
+            <p class="subtitulo">Pare de perder tempo com meias perdidas e comece a utilizar meias de pares diferentes,
+                especiais e únicas!</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="secao">
+            <div class="container">
+                <h2 class="titulo-secao">Caso tenha interesse em nossos produtos nos contate!</h2>
+
+                <div class="grade-cards">
+                    <article class="card">
+
+                        <form class="formulario" action="#" method="post">
+                            <fieldset>
+                                <legend>Escreva suas informações para concluir sua compra ou tirar suas dúvidas!
+                                </legend>
+
+                                <div class="campo-formulario">
+                                    <label for="nome">Nome Completo</label>
+                                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome Completo"
+                                        minlength="3" maxlength="80" required>
+                                </div>
+                                <div class="campo-formulario">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="email@exemplo.com.br"
+                                        required>
+                                </div>
+                                <div class="campo-formulario">
+                                    <label for="telefone">Telefone:</label>
+                                    <input type="tel" id="telefone" name="telefone" required>
+                                </div>
+                                <div class="campo-formulario">
+                                    <label for="site">Endereço</label>
+                                    <input type="text" name="endereco" id="endereco"
+                                        placeholder="Av. Eng. Carlos Reinaldo Mendes, 3041, Alto da Boa Vista, Sorocaba - SP, CEP 18013-280"
+                                        required>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Sobre o Contato</legend>
+
+                                <div class="campo-formulario">
+                                    <label for="assunto">O que você gostaria:</label>
+
+                                    <select name="assunto" id="assunto" required>
+                                        <option aria-required="true" value="">Selecione</option>
+                                        <option value="consulta">Consulta</option>
+                                        <option value="compra">Compra</option>
+                                    </select>
+                                </div>
+
+                                <p>Produtos desejados:</p>
+                                <p>
+                                <div class="campo-formulario-escolha">
+                                    <div class="escolha">
+                                        <input type="radio" id="adaptadora" name="tipo-contato" value="adaptadora">
+                                        <label for="adaptadora">Meias Adaptadoras</label>
+                                    </div>
+
+                                    <div class="escolha">
+                                        <input type="radio" name="tipo-contato" id="enganadora">
+                                        <label for="enganadora">Meias Enganadoras</label>
+                                    </div>
+
+                                    <div class="escolha">
+                                        <input type="radio" name="tipo-contato" id="protetora">
+                                        <label for="protetora">Meias Protetoras</label>
+                                    </div>
+
+                                    <div class="escolha">
+                                        <input type="radio" name="tipo-contato" id="eterna">
+                                        <label for="eterna">Meia Eterna</label>
+                                    </div>
+
+                                    <div class="escolha">
+                                        <input type="radio" name="tipo-contato" id="teleportadora">
+                                        <label for="teleportadora">Meias Teleportadoras</label>
+                                    </div>
+
+                                    <div class="escolha">
+                                        <input type="radio" name="tipo-contato" id="detectora">
+                                        <label for="detectora">Meias Detectoras</label>
+                                    </div>
+                                </div>
+                                </p>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Preferências</legend>
+
+                                <div class="campo-formulario">
+                                    <label for="data">Data possível para entrega:</label>
+                                    <input type="date" id="data" name="data" required>
+                                </div>
+
+                                <div class="campo-formulario">
+                                    <label for="horario">Horário preferido para entrega:</label>
+                                    <input type="time" name="horario" id="horario" required>
+                                </div>
+                                <div class="campo-formulario">
+                                    <label for="cor">Escolha a cor das suas meias:</label>
+                                    <input type="color" name="cor" id="cor" value="#2563ff">
+                                </div>
+                                <div class="campo-formulario">
+                                    <label for="arqivo">Anexar comprovante de pagamento:</label>
+                                    <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx" required>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Mensagem para nos ajudar:</legend>
+
+                                <div class="campo-formulario">
+                                    <label for="mensagem">Escreva sua mensagem:</label>
+                                    <textarea name="mensagem" id="mensagem" rows="8" minlength="10" maxlength="1000"
+                                        placeholder="Escreva aqui..."></textarea>
+                                </div>
+                            </fieldset>
+                            <div class="acoes-formulario">
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Limpar</button>
+                            </div>
+                        </form>
+        </section>
+        
+        </div>
+
+        </div>
+        </section>
+        <a href="tel:+5515998261009">
+            <img class="Whatsapp" src="../img/Whatsapp-roxo.png" alt="Whatsapp">
+        </a>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2026 Gabriel Tavares</p>
+
+            <address>
+                <a href="mailto: biel.wellichan@gmail.com">Email Pessoal</a>
+                <span> | </span>
+                <a href="mailto: gabriel.wellichan@portalsesisp.org.br">Email Escolar</a>
+                <span> | </span>
+                <a href="tel:+5515998261009">Telefone</a>
+                <span> | </span>
+                <a href="https://github.com/bielwellichan-debug" target="_blank">GitHub</a>
+            </address>
+        </div>
+    </footer>
+
+</body>
+
+</html>

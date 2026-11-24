@@ -71,6 +71,7 @@ a{
     margin: 20px 0 0;
     padding: 0;
     color: #140724;
+    font-size: 20px;
 
     list-style: none;
 
@@ -94,10 +95,12 @@ a{
 
     text-decoration: none;
     width: 100%;
+    transition: 0.3s;
 }
 
 .menu-link:hover{
     background-color: #6c2bd9;
+    transform: translateY(-3px);
 }
 
 .container-imagem{
@@ -244,4 +247,10 @@ nav #lista-menu{
     right: 20px;
     width: 75px;
     height: auto;
+}
+
+strong{
+    color: #6c2bd9;
+    margin-left: 155px;
+    text-align: center;
 }
