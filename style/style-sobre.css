@@ -1,0 +1,10 @@
+.container-slogan{
+    width: 50px;
+}
+
+.slogan{
+    width: 650px;
+    height: 350px;
+    margin-left: 125px;
+    border-radius: 8px;
+}

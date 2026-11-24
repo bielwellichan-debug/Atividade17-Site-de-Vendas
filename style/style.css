@@ -223,6 +223,10 @@ nav #lista-menu{
     background-color: #6c2bd9;
 }
 
+.menu-compre a:hover{
+    background-color: #418C35;
+}
+
 
 .menu-principal ul{
     padding-left: 0;
