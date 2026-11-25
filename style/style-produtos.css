@@ -1,13 +1,13 @@
-table{
+table {
     width: 100%;
 
     border-collapse: collapse;
     background-color: white;
     transition: 0.3s;
-    
+
 }
 
-table caption{
+table caption {
     margin-bottom: 10px;
     color: #418C35;
 
@@ -15,59 +15,60 @@ table caption{
     text-align: left;
 }
 
-table th, table td{
-   padding: 12px;
+table th,
+table td {
+    padding: 12px;
 
     border: 1px solid #d2ebec;
 
     text-align: left;
 }
 
-table thead{
+table thead {
     background-color: #d2ebec;
 }
 
-table tfoot{
+table tfoot {
     background-color: #d2ebec;
 }
 
-table:hover{
+table:hover {
     transform: translateY();
 }
 
-#promocao{
+#promocao {
     display: block;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    margin: 20px auto;
     border-radius: 8px;
 
-    transition-property: width, height;
-    transition-duration: 3s, 3s;
-    transition-timing-function: ease-in-out, ease-in-out;
+    transition-property: max-width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
-#promocao:hover{
-    width: 700px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
+#promocao:hover {
+    max-width: 450px;
 }
 
-.container-meias{
+.container-meias {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 10px;                             
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     width: 100%;
     margin: 20px 0;
 }
 
-.meias{
+.meias {
+    width: 100%;
+    height: auto;
     border-radius: 20px;
+    transition: 0.3s
 }
 
-.meias:hover{
+.meias:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 20px black;
 }

@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redaction+20:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
 
     background-color: #1e0b36;
@@ -15,54 +15,48 @@ body{
     background-position: right bottom;
 
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
 }
 
-h1, h2{
+h1,
+h2 {
     color: #46ae36;
 }
 
-h1{
+h1 {
     text-shadow: -1px 1px 5px #000, -2px 2px 5px #000, -3px 3px 5px #0000, -4px 4px 5px #000, -5px 5px 5px #000;
-    font-size: 38px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
-h2{
-    font-size: 26px;
+h2 {
+    font-size: 22px;
 }
 
-a{
+a {
     color: black;
 }
 
-.container{
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.cabecalho{
+.cabecalho {
     background-image: url('../img/logo.png');
-    background-size: auto 100%;
+    background-size: contain;
+    /* background-size: contain; -> Serve para forçar a imagem a ficar dentro do cabeçalho e aparecer inteira em telas pequenas */
     background-position: center;
     background-repeat: no-repeat;
     background-color: #140724;
-    padding: 50px 0;
+    padding: 30px 15px;
     border-bottom: 3px solid #6c2bd9;
     color: white;
-    padding-top: 25px;
-    padding-bottom: 25px;
     transition: 3s;
 }
 
-.cabecalho:hover{
+.cabecalho:hover {
 
     transform: translateY(-8px);
 }
 
-.subtitulo{
+.subtitulo {
     max-width: 450px;
     margin-bottom: 0;
     font-size: 20px;
@@ -70,7 +64,7 @@ a{
     margin-top: 40px;
 }
 
-.menu-lista{
+.menu-lista {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -86,8 +80,8 @@ a{
     transition: height 0.5s;
 }
 
-.menu-link{
-    display:block;
+.menu-link {
+    display: block;
 
     padding: 8px 12px;
     margin-left: 0;
@@ -104,39 +98,39 @@ a{
     transition: 0.3s;
 }
 
-.menu-link:hover{
+.menu-link:hover {
     background-color: #6c2bd9;
     transform: translateY(-3px);
 }
 
-.container-imagem{
-    margin: 50px auto;
-    width: 300px;
-    height: 200px;
+.container-imagem {
+    margin: 30px auto;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
 
-    transition-property: width, height;
-    transition-duration: 3s, 3s;
-    transition-timing-function: ease-in-out, ease-in-out;
+    transition-property: max-width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
-.container-imagem:hover{
-    width: 700px;
-    height: 300px;
+.container-imagem:hover {
+    max-width: 450px;
 }
 
-.container-imagem img{
+.container-imagem img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
 
-.secao{
-    padding: 72px;
+.secao {
+    padding: 32px 0;
 }
 
-.titulo-secao{
+.titulo-secao {
     margin-bottom: 32px;
     padding-left: 12px;
 
@@ -144,13 +138,13 @@ a{
     border-radius: 5px;
 }
 
-.grade-cards{
+.grade-cards {
     display: grid;
     gap: 24px;
     grid-template-columns: minmax(0, 1fr);
 }
 
-.card{
+.card {
     padding: 24px;
     background-color: white;
     border: 1px solid #1e0b36;
@@ -158,7 +152,7 @@ a{
     box-shadow: 0 10px 30px black;
 }
 
-.rodape{
+.rodape {
     margin-top: 40px;
     padding: 25px;
     background-color: #EDEDED;
@@ -166,27 +160,27 @@ a{
     color: #140724;
 }
 
-.rodape a{
+.rodape a {
     text-decoration: none;
 }
 
-.rodape address{
+.rodape address {
     font-style: normal;
     text-decoration: none;
 }
 
-.rodape a:hover{
+.rodape a:hover {
     transition: color .3s linear;
     color: #410985;
 }
 
 
 
-#lista-menu:hover .menu-lista{
+#lista-menu:hover .menu-lista {
     height: 260px;
 }
 
-.menu-lista li{
+.menu-lista li {
     border-radius: 7px;
     width: auto;
     height: auto;
@@ -199,7 +193,7 @@ a{
     list-style: none;
 }
 
-nav #lista-menu{
+nav #lista-menu {
     display: inline-block;
     list-style: none;
     padding: 8px 16px;
@@ -212,20 +206,20 @@ nav #lista-menu{
     color: #140724;
 }
 
-.menu-compre{
+.menu-compre {
     list-style: none;
+    padding: 0;
     text-align: center;
 }
 
-.menu-compre a{
-     display:block;
-     border: 2px solid white;
+.menu-compre a {
+    display: inline-block;
+    border: 2px solid white;
     border-radius: 5px;
 
-    padding: 8px 0px;
-    margin-left: 24%;
-    margin-right: 20px;
-    width: 50%;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 320px;
 
     color: white;
     text-decoration: none;
@@ -233,13 +227,13 @@ nav #lista-menu{
     transition: 0.3s;
 }
 
-.menu-compre a:hover{
+.menu-compre a:hover {
     background-color: #418C35;
     transform: translateY(-3px);
 }
 
 
-.menu-principal ul{
+.menu-principal ul {
     padding-left: 0;
     margin-left: 0;
 }
@@ -249,7 +243,7 @@ nav #lista-menu{
     padding-left: 0;
 }
 
-.Whatsapp{
+.Whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -257,8 +251,10 @@ nav #lista-menu{
     height: auto;
 }
 
-.strong{
+.strong {
+    display: block;
     color: #6c2bd9;
-    margin-left: 155px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
