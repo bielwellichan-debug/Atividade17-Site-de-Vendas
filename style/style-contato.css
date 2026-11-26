@@ -72,3 +72,34 @@
 .escolha{
     display: flex;
 }
+
+.titulo-secao-contato{
+    margin-bottom: 32px;
+    padding-left: 12px;
+
+    border-left: 5px solid white;
+    border-radius: 5px;
+    transition: 5s;
+}
+
+.titulo-secao-contato:hover{
+    transform: translateX(330px);
+}
+
+.enviar{
+    transition: 0.5s;
+}
+
+.enviar:hover{
+    background-color: #46ae36;
+    transform: translateY(-5px);
+}
+
+.limpar{
+    transition: 0.5s;
+}
+
+.limpar:hover{
+    background-color: #46ae36;
+    transform: translateY(-5px);
+}

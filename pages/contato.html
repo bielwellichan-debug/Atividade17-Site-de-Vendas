@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/style-contato.css">
-    <title>Meias Fantasmas | Produtos</title>
+    <title>Meias Fantasmas | Contato</title>
 </head>
 
 <body>
     <header class="cabecalho">
+        <!-- Esse container serve para centralizar o conteúdo -->
         <div class="container">
 
             <h1>Meias Fantasmas</h1>
@@ -45,14 +51,15 @@
     </header>
 
     <main>
-        <section class="secao">
-            <div class="container">
-                <h2 class="titulo-secao">Caso tenha interesse em nossos produtos nos contate!</h2>
+        <!-- Esse container serve para centralizar o conteúdo -->
+        <div class="container">
+            <section class="secao">
+                <h2 class="titulo-secao-contato">Caso tenha interesse em nossos produtos nos contate!</h2>
 
                 <div class="grade-cards">
                     <article class="card">
 
-                        <form class="formulario" action="#" method="post">
+                        <form class="formulario">
                             <fieldset>
                                 <legend>Escreva suas informações para concluir sua compra ou tirar suas dúvidas!
                                 </legend>
@@ -72,7 +79,7 @@
                                     <input type="tel" id="telefone" name="telefone" required>
                                 </div>
                                 <div class="campo-formulario">
-                                    <label for="site">Endereço</label>
+                                    <label for="endereco">Endereço</label>
                                     <input type="text" name="endereco" id="endereco"
                                         placeholder="Av. Eng. Carlos Reinaldo Mendes, 3041, Alto da Boa Vista, Sorocaba - SP, CEP 18013-280"
                                         required>
@@ -92,39 +99,37 @@
                                 </div>
 
                                 <p>Produtos desejados:</p>
-                                <p>
                                 <div class="campo-formulario-escolha">
                                     <div class="escolha">
-                                        <input type="radio" id="adaptadora" name="tipo-contato" value="adaptadora">
+                                        <input type="checkbox" id="adaptadora" name="tipo-contato" value="adaptadora">
                                         <label for="adaptadora">Meias Adaptadoras</label>
                                     </div>
 
                                     <div class="escolha">
-                                        <input type="radio" name="tipo-contato" id="enganadora">
+                                        <input type="checkbox" name="tipo-contato" id="enganadora">
                                         <label for="enganadora">Meias Enganadoras</label>
                                     </div>
 
                                     <div class="escolha">
-                                        <input type="radio" name="tipo-contato" id="protetora">
+                                        <input type="checkbox" name="tipo-contato" id="protetora">
                                         <label for="protetora">Meias Protetoras</label>
                                     </div>
 
                                     <div class="escolha">
-                                        <input type="radio" name="tipo-contato" id="eterna">
+                                        <input type="checkbox" name="tipo-contato" id="eterna">
                                         <label for="eterna">Meia Eterna</label>
                                     </div>
 
                                     <div class="escolha">
-                                        <input type="radio" name="tipo-contato" id="teleportadora">
+                                        <input type="checkbox" name="tipo-contato" id="teleportadora">
                                         <label for="teleportadora">Meias Teleportadoras</label>
                                     </div>
 
                                     <div class="escolha">
-                                        <input type="radio" name="tipo-contato" id="detectora">
+                                        <input type="checkbox" name="tipo-contato" id="detectora">
                                         <label for="detectora">Meias Detectoras</label>
                                     </div>
                                 </div>
-                                </p>
                             </fieldset>
                             <fieldset>
                                 <legend>Preferências</legend>
@@ -143,7 +148,7 @@
                                     <input type="color" name="cor" id="cor" value="#2563ff">
                                 </div>
                                 <div class="campo-formulario">
-                                    <label for="arqivo">Anexar comprovante de pagamento:</label>
+                                    <label for="arquivo">Anexar comprovante de pagamento:</label>
                                     <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx" required>
                                 </div>
                             </fieldset>
@@ -157,24 +162,24 @@
                                 </div>
                             </fieldset>
                             <div class="acoes-formulario">
-                                <button type="submit">Enviar</button>
-                                <button type="reset">Limpar</button>
+                                <button class="enviar" type="submit">Enviar</button>
+                                <button class="limpar" type="reset">Limpar</button>
                             </div>
                         </form>
-        </section>
-        
-        </div>
+            </section>
+
+            <a href="tel:+5515998261009">
+                <img class="Whatsapp" src="../img/Whatsapp-roxo.png" alt="Whatsapp">
+            </a>
 
         </div>
-        </section>
-        <a href="tel:+5515998261009">
-            <img class="Whatsapp" src="../img/Whatsapp-roxo.png" alt="Whatsapp">
-        </a>
+
     </main>
 
     <footer class="rodape">
+        <!-- Esse container serve para centralizar o conteúdo -->
         <div class="container">
-            <p>&copy; 2026 Gabriel Tavares</p>
+            <p class="autor">&copy; 2026 Gabriel Tavares</p>
 
             <address>
                 <a href="mailto: biel.wellichan@gmail.com">Email Pessoal</a>
@@ -187,6 +192,10 @@
             </address>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
 
 </body>
 

@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/style-produtos.css">
     <title>Meias Fantasmas | Produtos</title>
@@ -11,6 +16,7 @@
 
 <body>
     <header class="cabecalho">
+        <!-- Esse container serve para centralizar o conteúdo -->
         <div class="container">
 
             <h1>Meias Fantasmas</h1>
@@ -45,16 +51,19 @@
     </header>
 
     <main>
-        <section class="secao">
-            <div class="container">
-                <h2 class="titulo-secao">Venha conhecer um pouco mais sobre nossos produtos</h2>
+        <!-- Esse container serve para centralizar o conteúdo -->
+        <div class="container">
+
+            <section class="secao">
+                <h2 class="titulo-secao-produtos">Venha conhecer um pouco mais sobre nossos produtos</h2>
 
                 <div class="grade-cards">
                     <article class="card">
-                        <h2>O que nossas meias podem oferecer?</h2>
+                        <h2 class="oque">O que nossas meias podem oferecer?</h2>
                         <p>Muitas vezes as pessoas acabam sofrendo com meias desconfortáveis, e principalmente, com
                             meias que sumiram misteriosamente. A solução da Meias Fantasmas é justamente trazer mais
-                            conforto e uma praticidade, vender apenas meias separadas que possam repor o pé de um dos
+                            conforto e uma praticidade, vender apenas meias separadas que possam repor o pé de um
+                            dos
                             pares que foi perdido, e fazendo isso com maestria!</p>
                         <p>Nossa empresa trouxe ideias e tecnologias inovadoras, tanto para conforto quanto para que
                             nossos clientes nunca mais tenham que comprar meias novas porque elas simplesmente
@@ -63,93 +72,137 @@
 
 
                         <div class="container-meias">
-                            <img class="meias" src="../img/meia1.png" alt="Meias Adaptadoras">
-                            <img class="meias" src="../img/meia2.png" alt="Meias Enganadoras">
-                            <img class="meias" src="../img/meia3.png" alt="Meias Protetoras">
-                            <img class="meias" src="../img/meia4.png" alt="Meia Eterna">
-                            <img class="meias" src="../img/meia5.png" alt="Meias Teleportadoras">
-                            <img class="meias" src="../img/meia6.png" alt="Meias Detectoras">
+                            <!-- Essa classe img-fluid serve para que em telas de celulares as imagens não ultrapassem os cards -->
+                            <img class="meias img-fluid" src="../img/meia1.png" alt="Meias Adaptadoras">
+                            <img class="meias img-fluid" src="../img/meia2.png" alt="Meias Enganadoras">
+                            <img class="meias img-fluid" src="../img/meia3.png" alt="Meias Protetoras">
+                            <img class="meias img-fluid" src="../img/meia4.png" alt="Meia Eterna">
+                            <img class="meias img-fluid" src="../img/meia5.png" alt="Meias Teleportadoras">
+                            <img class="meias img-fluid" src="../img/meia6.png" alt="Meias Detectoras">
+                            <img class="meias img-fluid" src="../img/vedilson.png" alt="Meias do Vedilson">
+                            <img class="meias img-fluid" src="../img/gp.jpg" alt="Meias do GP">
+                            <img class="meias img-fluid" src="../img/meia7.jpg" alt="Meias Aquáticas">
+                            
                         </div>
 
                         <br>
 
-                        <table class="tabela-produtos">
-                            <caption>Tabela de produtos</caption>
-                            <thead>
-                                <tr>
-                                    <th scope="col">Produto</th>
-                                    <th scope="col">Sobre</th>
-                                    <th scope="col">Preço</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Meias Adaptadoras</th>
-                                    <td>Se transformam no par correspondente ao serem colocadas lado a lado</td>
-                                    <td>R$28,00</td>
-                                </tr>
 
-                                <tr>
-                                    <th scope="row">Meias enganadoras</th>
-                                    <td>Camuflam meias feias e que podem fazer você ser zoado</td>
-                                    <td>R$34,00</td>
-                                </tr>
 
-                                <tr>
-                                    <th scope="row">Meias protetoras</th>
-                                    <td>Atacam quem estiver fazendo bullying com você (saem voando e atacam)</td>
-                                    <td>R$47,00</td>
-                                </tr>
 
-                                <tr>
-                                    <th scope="row">Meia eterna</th>
-                                    <td>Uma meia que nunca vai sair do seu pé, porém, quanto mais tempo passado, mais
-                                        ela fica confortável no pé e deixa o tênis do formato ideal no pé</td>
-                                    <td>R$60,00</td>
-                                </tr>
+                        <div class="table-responsive">
+                            <!-- Essa classe serve para adicionar a barra de rolagem nas tabelas olhando pelo celular -->
+                            <table class="tabela-produtos">
+                                
+                                <caption>Tabela de produtos</caption>
 
-                                <tr>
-                                    <th scope="row">Meias Teleportadoras</th>
-                                    <td>Quando você perde uma meia, ela teleporta até você. É perfeita para resolver o
-                                        problema clássico da meia que desaparece misteriosamente.</td>
-                                    <td>R$39,00</td>
-                                </tr>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Produto</th>
+                                        <th scope="col">Sobre</th>
+                                        <th scope="col">Preço</th>
+                                        <th scope="col">Adicionar ao carrinho</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Meias Adaptadoras</th>
+                                        <td>Se transformam no par correspondente ao serem colocadas lado a lado</td>
+                                        <td>R$28,00</td>
+                                        <td><a class="carrinho" href="../pages/contato.html">Adicionar ao Carrinho</a></td>
+                                    </tr>
 
-                                <tr>
-                                    <th scope="row">Meias Detectoras</th>
-                                    <td>Possuem um detector de meias perdidas. Quando encontram uma meia sem par,
-                                        começam a piscar e apontam para onde ela está.</td>
-                                    <td>R$45,00</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td colspan="5"><strong>Preços sujeitos a alteração</strong></td>
-                                </tr>
-                            </tfoot>
-                        </table>
+                                    <tr>
+                                        <th scope="row">Meias enganadoras</th>
+                                        <td>Camuflam meias feias e que podem fazer você ser zoado</td>
+                                        <td>R$34,00</td>
+                                        <td><a class="carrinho" href="../pages/contato.html">Adicionar ao Carrinho</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Meias protetoras</th>
+                                        <td>Atacam quem estiver fazendo bullying com você (saem voando e atacam)</td>
+                                        <td>R$47,00</td>
+                                        <td><a class="carrinho" href="../pages/contato.html">Adicionar ao Carrinho</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Meia eterna</th>
+                                        <td>Uma meia que nunca vai sair do seu pé, porém, quanto mais tempo passado,
+                                            mais
+                                            ela fica confortável no pé e deixa o tênis do formato ideal no pé</td>
+                                        <td>R$60,00</td>
+                                        <td><a class="carrinho" href="../pages/contato.html">Adicionar ao Carrinho</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Meias Teleportadoras</th>
+                                        <td>Quando você perde uma meia, ela teleporta até você. É perfeita para resolver
+                                            o
+                                            problema clássico da meia que desaparece misteriosamente.</td>
+                                        <td>R$39,00</td>
+                                        <td><a class="carrinho" href="../pages/contato.html">Adicionar ao Carrinho</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Meias Detectoras</th>
+                                        <td>Possuem um detector de meias perdidas. Quando encontram uma meia sem par,
+                                            começam a piscar e apontam para onde ela está.</td>
+                                        <td>R$45,00</td>
+                                        <td><a class="carrinho" href="../pages/contato.html">Adicionar ao Carrinho</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Meias do Vedilson</th>
+                                        <td>Fazem você ficar estiloso e engraçado em qualquer momento, além de que de brinde você ainda ganha um óculos de brinde!</td>
+                                        <td>R$ 1000,00</td>
+                                        <td><a class="carrinho" href="../pages/contato.html">Adicionar ao Carrinho</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Meias GP</th>
+                                        <td>Fazem você ficar sigma a qualquer momento, além de que te damos o acesso ao GTA VI de graça por uma semana!</td>
+                                        <td>R$4000,00</td>
+                                        <td><a class="carrinho" href="../pages/contato.html">Adicionar ao Carrinho</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Meias Aquáticas</th>
+                                        <td>Fazem com que seu pé nunca molhe ao pisar no molhado, além de que conseguem secar o chão e secarem outras meias para que você nunca fique sem meias!</td>
+                                        <td>R$70,00</td>
+                                        <td><a class="carrinho" href="../pages/contato.html">Adicionar ao Carrinho</a></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4"><strong>Preços sujeitos a alteração</strong></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
 
 
                     </article>
 
                     <article class="card">
-                        <h2>Nossa Super-Promoção</h2>
-                        <p>Para você que é cliente novo, está interessado em nossos produtos, mas ainda não tem certeza
+                        <h2 class="super">Nossa Super-Promoção</h2>
+                        <p>Para você que é cliente novo, está interessado em nossos produtos, mas ainda não tem
+                            certeza
                             se quer nossos produtos, nós preparamos uma super-promoção para vocês!</p>
-                        <p>Traga 5 pares com um pé perdido (deve provar ao atendente que a meia está sem um par) e nós
+                        <p>Traga 5 pares com um pé perdido (deve provar ao atendente que a meia está sem um par) e
+                            nós
                             te damos de graça um pé diferente, de 3 de nossos 6 produtos!</p>
 
-                        <img id="promocao" src="../img/promocao.png" alt="Super-Promoção">
+                        <img id="promocao" class="img-fluid" src="../img/promocao.png" alt="Super-Promoção">
 
-                        <p><strong class="strong">Se quiser comprar nossos produtos clique no botão abaixo!</strong></p>
+                        <p><strong class="strong">Se quiser comprar nossos produtos clique no botão abaixo!</strong>
+                        </p>
                     </article>
                 </div>
+            </section>
+            <a href="tel:+5515998261009">
+                <img class="Whatsapp" src="../img/Whatsapp-roxo.png" alt="Whatsapp">
+            </a>
 
-            </div>
-        </section>
-        <a href="tel:+5515998261009">
-            <img class="Whatsapp" src="../img/Whatsapp-roxo.png" alt="Whatsapp">
-        </a>
+        </div>
+
     </main>
 
     <ul class="menu-compre">
@@ -159,8 +212,9 @@
     </ul>
 
     <footer class="rodape">
+        <!-- Esse container serve para centralizar o conteúdo -->
         <div class="container">
-            <p>&copy; 2026 Gabriel Tavares</p>
+            <p class="autor">&copy; 2026 Gabriel Tavares</p>
 
             <address>
                 <a href="mailto: biel.wellichan@gmail.com">Email Pessoal</a>
@@ -173,6 +227,10 @@
             </address>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
 
 </body>
 

@@ -1,73 +1,130 @@
-table{
+table {
     width: 100%;
 
     border-collapse: collapse;
     background-color: white;
-    transition: 0.3s;
-    
+
 }
 
-table caption{
+table caption {
     margin-bottom: 10px;
     color: #418C35;
 
     font-weight: bold;
     text-align: left;
+    caption-side: top;
+    font-size: 25px;
+    transition: 4s;
 }
 
-table th, table td{
-   padding: 12px;
+caption:hover {
+    transform: translateX(450px);
+}
+
+table th,
+table td {
+    padding: 12px;
 
     border: 1px solid #d2ebec;
 
     text-align: left;
 }
 
-table thead{
+table thead {
     background-color: #d2ebec;
 }
 
-table tfoot{
+table tfoot {
     background-color: #d2ebec;
 }
 
-table:hover{
+table:hover {
     transform: translateY();
 }
 
-#promocao{
+#promocao {
     display: block;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    margin: 20px auto;
     border-radius: 8px;
 
-    transition-property: width, height;
-    transition-duration: 3s, 3s;
-    transition-timing-function: ease-in-out, ease-in-out;
+    transition-property: max-width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
-#promocao:hover{
-    width: 700px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
+#promocao:hover {
+    max-width: 450px;
 }
 
-.container-meias{
+.container-meias {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 10px;                             
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     width: 100%;
+    max-width: 950px;
     margin: 20px 0;
 }
 
-.meias{
+.meias {
+    width: 100%;
+    height: auto;
     border-radius: 20px;
+    transition: 0.3s
 }
 
-.meias:hover{
+.meias:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 20px black;
+}
+
+.titulo-secao-produtos {
+    margin-bottom: 32px;
+    padding-left: 12px;
+
+    border-left: 5px solid white;
+    border-radius: 5px;
+    transition: 5s;
+}
+
+.titulo-secao-produtos:hover {
+    transform: translateX(340px);
+}
+
+.oque {
+    transition: 5s;
+}
+
+.oque:hover {
+    transform: translateX(400px);
+}
+
+.super {
+    transition: 4s;
+}
+
+.super:hover {
+    transform: translateX(450px);
+}
+
+.carrinho {
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 5px;
+
+    padding: 10px 10px;
+    width: 100%;
+    max-width: 320px;
+
+    color: white;
+    text-decoration: none;
+    background-color: #2da9ad;
+    transition: 0.3s;
+}
+
+.carrinho:hover{
+    background-color: #6c2bd9;
+    transform: translateY(-3px);
 }
